@@ -48,25 +48,40 @@
 
 // snack3
 // Scrivi una funzione che fonda due array (con lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altroes. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
- var array1 = ['1','2','3','4']
- var array2 = ['a','b','c','d']
- var nuovo =[]
- var lunghezza;
+//  var array1 = ['1','2','3','4']
+//  var array2 = ['a','b','c','d']
+//  var nuovo =[]
+//  var lunghezza;
 
 
- function unisciarray (array1,array2){
-  var nuovo= []
- if (array1.length == array2.length){
-     var lunghezza = array1.length;
+//  function unisciarray (array1,array2){
+//   var nuovo= []
+//  if (array1.length == array2.length){
+//      var lunghezza = array1.length;
 
-     for(var i=0; i<lunghezza; i++){
-         array1.push(nuovo[i])
-         array2.push(nuovo[i])
-     }
- } else{
-     console.log('i due array non sono uguali')
- }
-     return nuovo;
- }
+//      for(var i=0; i<lunghezza; i++){
+//          array1.push(nuovo[i])
+//          array2.push(nuovo[i])
+//      }
+//  } else{
+//      console.log('i due array non sono uguali')
+//  }
+//      return nuovo;
+//  }
 
- console.log(unisciarray(array1,array2));
+//  console.log(unisciarray(array1,array2));
+
+// snack4
+// Scrivi una funzione che prenda una stringa e la trasformi con l'iniziale maiuscola e tutto il resto in minuscolo.
+
+var parola=prompt('inserisci parola');
+
+function capitalize(maiusc){
+    var lettera = maiusc[0];
+    lettera = lettera.toUpperCase();
+    maiusc=maiusc.substring(1).tolowercase();
+    maiusc= lettera + maiusc;
+    return maiusc;
+
+}
+console.log(capitalize(parola));
